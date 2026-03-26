@@ -1,0 +1,46 @@
+[
+  {
+    "id": "col2",
+    "img": "image/Col1.jpeg",
+    "brand": "Bata",
+    "name": "colgate sensodyn",
+    "currPrice": "310",
+    "oldPrice": "290",
+    "disc": "11",
+    "category": "colgate",
+    "ratings": "4"
+  },
+  {
+    "id": "mon1",
+    "img": "image/mon1.jpg",
+    "brand": "frontech",
+    "name": "frontech monitor 20\"",
+    "currPrice": "310",
+    "oldPrice": "290",
+    "disc": "10",
+    "category": "electronics",
+    "ratings": "4"
+  },
+  {
+    "id": "col3",
+    "img": "image/Col1.jpeg",
+    "brand": "colgate",
+    "name": "colgate sensodyn",
+    "currPrice": "310",
+    "oldPrice": "289",
+    "disc": "32",
+    "category": "colgate",
+    "ratings": "5"
+  },
+  {
+    "id": "col4",
+    "img": "image/col7.jpg",
+    "brand": "colgate",
+    "name": "colgate ved shakti",
+    "currPrice": "200",
+    "oldPrice": "210",
+    "disc": "10",
+    "category": "colgate",
+    "ratings": "4"
+  }
+]

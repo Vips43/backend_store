@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../src/output.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <title>Login</title>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen scrollbar-hide">
+
+  <div class="w-full max-w-md bg-white shadow-xl rounded-xl p-8 border border-gray-100">
+    <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Welcome Back</h2>
+
+    <form class="login-form space-y-4">
+
+      <div>
+        <label class="text-gray-600 text-sm">Email</label>
+        <input id="lEmail" type="email" name="email"
+          class="w-full mt-1 px-4 py-2 rounded-lg border focus:ring-2 focus:ring-blue-400 outline-none" 
+          placeholder="you@example.com">
+      </div>
+
+      <div>
+        <label class="text-gray-600 text-sm">Password</label>
+        <input id="lPass" type="password" name="pass"
+          class="w-full mt-1 px-4 py-2 rounded-lg border focus:ring-2 focus:ring-blue-400 outline-none" 
+          placeholder="Your password">
+      </div>
+
+      <button type="submit"
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold transition">
+        Login
+      </button>
+
+      <p class="text-center text-sm text-gray-600 mt-2">
+        Don’t have an account?
+        <a href="signup.html" class="text-blue-600 hover:underline">Sign Up</a>
+      </p>
+
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
