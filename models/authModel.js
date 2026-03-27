@@ -108,4 +108,17 @@ authRouter.get("/users", isAdmin, async (req, res) => {
   }
 });
 
+authRouter.delete("/remove-user", isAdmin, async (req, res) => {
+  const { userId } = req.body;
+  try {
+    const user = await User.findByIdAndDelete(userId);
+    if (!user) res.send(401).json({ msg: "user not found" });
+
+    res.status(200).json({ msg: "user deleted successfully." });
+  } catch (error) {
+    console.error("Error in getting users: ", error);
+    res.status(500).json({ msg: "Error in getting users", error: error });
+  }
+});
+
 export default authRouter;
