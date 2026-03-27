@@ -10,6 +10,9 @@ import productRoute from "./models/productModel.js";
 import cartModel from "./models/cartModel.js";
 import wishlistModel from "./models/wishlistModel.js";
 import writeFileModel from "./models/write.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -27,7 +30,9 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-connectDB();
+const uri = process.env.MONGO_DB;
+
+connectDB(uri);
 
 app.use("/auth", authRouter);
 app.use("/v1", productRoute(getLocalData));

@@ -112,7 +112,7 @@ authRouter.delete("/remove-user", isAdmin, async (req, res) => {
   const { userId } = req.body;
   try {
     const user = await User.findByIdAndDelete(userId);
-    if (!user) res.send(401).json({ msg: "user not found" });
+    if (!user) return res.send(401).json({ msg: "user not found" });
 
     res.status(200).json({ msg: "user deleted successfully." });
   } catch (error) {

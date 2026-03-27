@@ -1,8 +1,6 @@
 import mongoose from "mongoose";
 
-const uri = "mongodb://127.0.0.1:27017/usersDB";
-
-export const connectDB = async () => {
+export const connectDB = async (uri) => {
   try {
     await mongoose.connect(uri);
     console.log("MongoDB connected");
@@ -10,7 +8,6 @@ export const connectDB = async () => {
     console.log("MongoDB error:", err);
   }
 };
-
 const userSchema = new mongoose.Schema(
   {
     name: String,
